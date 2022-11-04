@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Consumo</title>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="title">Calculadora de consumo para PCs</div>
+
+    <div class="card">
+      <!-- Consumo do PC -->
+      <div class="input">
+        <div class="label">Consumo do PC em Watts</div>
+        <input type="text" id="consumo">
+      </div>
+
+      <!-- Eficiência da fonte -->
+      <div class="input">
+        <div class="label">Eficiência da fonte</div>
+        <input type="text" id="eficiencia">
+      </div>
+
+      <!-- Tempo ligado -->
+      <div class="input">
+        <div class="label">Horas ligado por dia</div>
+        <input type="text" id="horasdia">
+      </div>
+
+      <!-- Preço do KWH -->
+      <div class="input">
+        <div class="label">Preço do KWH na sua cidade</div>
+        <input type="text" id="kwh">
+      </div>
+
+      <!-- Calcular -->
+      <div class="btn" onclick="Calcular()">CALCULAR</div>
+
+
+      <!-- Resultado -->
+      <div class="results">
+        <div class="result-text">Seu PC consome cerca de:</div>
+        <div class="result-box">
+          <div class="result" id="cdia">R$0.00 /dia</div>
+          <div class="result" id="cmes">R$0.00 /mês</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Powered by -->
+    <a href="https://exgamext.netlify.app/" target="_blank">Powered by TTI Web Design</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

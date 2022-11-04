@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+  font-family: verdana;
+}
+
+:root {
+  --bg-primary: #ddd;
+  --bg-secondary: #eee;
+  --primary: #4169e1;
+  --hover: #3a5cc4;
+  --color: #fff;
+  --inv-color: #333;
+}
+
+:root.dark {
+  --bg-primary: #ddd;
+  --bg-secondary: #eee;
+  --primary: #4169e1;
+  --hover: #3a5cc4;
+  --color: #fff;
+}
+
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
+.title {
+  color: var(--primary);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 320px;
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #00000020;
+}
+
+.label {
+  font-weight: bold;
+  padding: 0px 5px;
+  font-size: 14px;
+  position: absolute;
+  left: 10px;
+  top: -12px;
+  background-color: var(--bg-secondary);
+}
+
+.input {
+  border-radius: 7px;
+  color: var(--primary);
+  margin: 10px 0px;
+  width: calc(100% - 5px);
+  position: relative;
+  border: solid 3px var(--primary);
+}
+
+
+
+input {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  padding-left: 5px;
+  background-color: transparent;
+  border: none;
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-color: var(--primary);
+  color: var(--color);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--hover);
+}
+
+.results {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result-text {
+  margin: 10px 0px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.result-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.result {
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 7px;
+  color: var(--color);
+}
+
+a {
+  text-decoration: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
